@@ -101,6 +101,11 @@ class sitead extends CI_Model {
         return $insert;
     }
 
+    function addadmin($data) {
+        $insert = $this->db->insert('civou', $data);
+        return $insert;
+    }
+
     function selectAllService() {
         $query = $this->db->get('service');
         if ($query->num_rows() > 0) {
@@ -119,6 +124,9 @@ class sitead extends CI_Model {
         } else {
             return false;
         }
+    }
+    function delete($id) {
+        
     }
 
 }

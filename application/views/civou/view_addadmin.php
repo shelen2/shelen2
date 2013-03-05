@@ -20,43 +20,35 @@
 
                 <div id="left" style="background:#111">       
                     <div class="featured_form">
-                        <?php echo form_open('civou/c_subcategory/addSubCategory'); ?>
+                        <?php echo form_open('civou/c_admin/addAdmin'); ?>
                         <div class="heading center">
-                            <h4><span class="bold">تسجيل قسم فرعى</span></h4>
+                            <h4><span class="bold">تسجيل أدمن </span></h4>
                             <div class="dotted"></div>
                         </div>
                         <ul>
                             <li>
-                                <label for="name">اسم القسم</label>
-                                <?php echo form_input(array('name' => 'categoryname', 'id' => "name")); ?>
+                                <label for="name">User Name </label>
+                                <?php echo form_input(array('name' => 'username')); ?>
 
                             </li>
 
                             <li>
+                                <label for="name">Password </label>
+                                <?php echo form_password(array('name' => 'pass')); ?>
 
-                                <label for="name">اسم القسم التابع له</label>
+                            </li>
+                            <li>
 
-                                <select name="categoryid" id="CmbCountry" class="home" style="width:570px;text-align:right" >
-
-                                    <option value="none" selected="selected" >اختار القسم </option>
-                                    <?php
-                                    $this->load->model('sitead');
-                                    $rows = $this->sitead->SelectCategory();
-                                    foreach ($rows as $row) {
-                                        echo "<option value=\"$row->id\">$row->name</option>";
-                                    }
-                                    ?>
-                                </select>
                             </li>
                         </ul>
                         <div class="centerdiv">
                             <div class="cta-button optin small">
-                                <?php echo form_submit(array('name' => 'button', 'class' => "cta1"), 'تسجيل') ?>
+                                <?php echo form_submit(array('name' => 'submit', 'class' => "cta1"), 'تسجيل') ?>
                             </div>
                         </div>
-
                         <div class="centerdiv">
                             <div class="cta-button optin small">
+
                                 <label> 
                                     <?php
                                     if (isset($mes)) {
@@ -66,7 +58,10 @@
                                 </label>
                             </div>
                         </div>
+
                         <?php echo form_close(); ?>
+
+
                     </div>
                 </div>
                 <div id="right">

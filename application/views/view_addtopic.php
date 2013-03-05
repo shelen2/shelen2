@@ -53,10 +53,6 @@
                 <div id="top-wrapp">
                     <?php include('header.php') ?>
 
-
-
-
-
                 </div>
             </section>
             <!-- end of section top -->
@@ -96,7 +92,7 @@
                                                 <select name="search_category"  id="search_category_id">
                                                     <option value="none" selected="selected" >اختار القسم الرئيسى</option>
                                                     <?php
-                                                    $query = "select * from category";
+                                                    $query = "select * from blog_category";
                                                     $results = mysql_query($query);
                                                     while ($rows = mysql_fetch_assoc(@$results)) {
                                                         ?>
