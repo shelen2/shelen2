@@ -101,6 +101,11 @@ class sitead extends CI_Model {
         return $insert;
     }
 
+    function addemployee($data) {
+        $insert = $this->db->insert('employee', $data);
+        return $insert;
+    }
+
     function addadmin($data) {
         $insert = $this->db->insert('civou', $data);
         return $insert;
@@ -125,8 +130,10 @@ class sitead extends CI_Model {
             return false;
         }
     }
-    function delete($id) {
-        
+
+    function delete($id, $tablename) {
+        $this->db->where('id', $id);
+        return $this->db->delete($tablename);
     }
 
 }
