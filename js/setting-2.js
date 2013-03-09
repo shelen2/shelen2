@@ -1,3 +1,0 @@
-		$(function(){
-			$().UItoTop({ easingType: 'easeOutQuart' });
-		});
