@@ -9,6 +9,7 @@ class c_b_category extends CI_Controller {
             $this->load->view('civou/view_login');
         }
     }
+
     function addBCategory() {
         $this->load->model('sitead');
         $this->load->library('form_validation');
@@ -32,6 +33,7 @@ class c_b_category extends CI_Controller {
             }
         }
     }
+
 
 }
 

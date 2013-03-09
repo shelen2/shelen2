@@ -23,7 +23,7 @@ class c_subcategory extends CI_Controller {
             $categoryname = $this->input->post('categoryname');
             $categoryid = $this->input->post('categoryid');
             if ($categoryid == "none") {
-                $message = array("mes" => "لم يتم اختيار القسم الرئيسى التابع له" );
+                $message = array("mes" => "لم يتم اختيار القسم الرئيسى التابع له");
                 $this->load->view('civou/view_addsubcategory', $message);
             } else {
                 if ($this->sitead->addsubcategory($categoryname, $categoryid)) {
@@ -34,6 +34,30 @@ class c_subcategory extends CI_Controller {
                     $this->load->view('civou/view_addsubcategory', $message);
                 }
             }
+        }
+    }
+
+    function showall() {
+        if ($this->session->userdata('logged_in')) {
+            $this->load->view('civou/view_allsubcategory');
+        } else {
+            $this->load->view('civou/view_login');
+        }
+    }
+
+    function delete() {
+        if ($this->session->userdata('logged_in')) {
+            $this->load->model('sitead');
+            if ($this->uri->segment(4) != '') {
+                $id = $this->uri->segment(4);
+                if ($this->sitead->delete($id, 'sub_categ')) {
+                    $this->load->view('civou/view_allsubcategory');
+                } else {
+                    
+                }
+            }
+        } else {
+            $this->load->view('civou/view_login');
         }
     }
 

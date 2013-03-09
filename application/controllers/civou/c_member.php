@@ -1,49 +1,52 @@
 <?php
 
-class c_admin extends CI_Controller {
+class c_employee extends CI_Controller {
 
-    function loadAddAdmin() {
+    function loadAddemployee() {
         if ($this->session->userdata('logged_in')) {
-            $this->load->view('civou/view_addadmin');
+            $this->load->view('civou/view_addemployee');
         } else {
             $this->load->view('civou/view_login');
         }
     }
 
-    function addAdmin() {
+    function addEmployee() {
         $this->load->model('sitead');
         $this->load->library('form_validation');
-        $this->form_validation->set_rules('username', 'Admin User Name', 'required|trim|max_length[100]|xss_clean');
-        $this->form_validation->set_rules('pass', 'Admin User Name', 'required|trim|max_length[100]|xss_clean');
+        $this->form_validation->set_rules('username', 'Employee User Name', 'required|trim|max_length[100]|xss_clean');
+        $this->form_validation->set_rules('pass', 'Employee Password', 'required|trim|max_length[100]|xss_clean');
+        $this->form_validation->set_rules('name', 'Employee Name', 'required|trim|max_length[100]|xss_clean');
 
         if ($this->form_validation->run() == false) {
             $message = array("mes" => " لا تترك النص فارغ");
-            $this->load->view('civou/view_addadmin', $message);
+            $this->load->view('civou/view_addemployee', $message);
 //            $this->loadAddCategory();
         } else {
             $username = $this->input->post('username');
             $pass = $this->input->post('pass');
+            $name = $this->input->post('name');
             $data = array(
                 'username' => $username,
-                'pass' => md5($pass)
+                'pass' => md5($pass),
+                'name'=> $name
             );
-            if ($this->sitead->addadmin($data)) {
+            if ($this->sitead->addemployee($data)) {
                 $message = array("mes" => "تم أضافة " . $username . " .");
 //                unset($this->input->post('categoryname'));
-                $this->load->view('civou/view_alladmins');
+                $this->load->view('civou/view_allemployee');
 //                $this->load->view('civou/view_addadmin', $message);
 //                $this->loadAddCategory();
             } else {
                 $message = array("mes" => "لقد حدثت مشكله فى الاضافه .");
-                $this->load->view('civou/view_addadmin', $message);
+                $this->load->view('civou/view_addemployee', $message);
 //                $this->loadAddCategory($message);
             }
         }
     }
 
-    function allAdmin() {
+    function allemployee() {
         if ($this->session->userdata('logged_in')) {
-            $this->load->view('civou/view_alladmins');
+            $this->load->view('civou/view_allemployee');
         } else {
             $this->load->view('civou/view_login');
         }
@@ -54,8 +57,8 @@ class c_admin extends CI_Controller {
             $this->load->model('sitead');
             if ($this->uri->segment(4) != '') {
                 $id = $this->uri->segment(4);
-                if ($this->sitead->delete($id, 'civou')) {
-                    $this->load->view('civou/view_alladmins');
+                if ($this->sitead->delete($id, 'employee')) {
+                    $this->load->view('civou/view_allemployee');
                 } else {
                     
                 }
