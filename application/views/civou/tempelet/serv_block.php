@@ -39,12 +39,12 @@
                             <h3 style="margin-top:-10px;">الرعاه</h3>
 
                             <div id="adv">
-                                <img src="<?php echo base_url(); ?>images/adv.gif"  />
-                                <img src="<?php echo base_url(); ?>images/adv.gif"  />
-                                <img src="<?php echo base_url(); ?>images/adv.gif"  />
-                                <img src="<?php echo base_url(); ?>images/adv.gif"  />
-                                <img src="<?php echo base_url(); ?>images/adv.gif"  />
-                                <img src="<?php echo base_url(); ?>images/adv.gif"  />
+                                <img src="<?php echo base_url(); ?>_images/adv.gif"  />
+                                <img src="<?php echo base_url(); ?>_images/adv.gif"  />
+                                <img src="<?php echo base_url(); ?>_images/adv.gif"  />
+                                <img src="<?php echo base_url(); ?>_images/adv.gif"  />
+                                <img src="<?php echo base_url(); ?>_images/adv.gif"  />
+                                <img src="<?php echo base_url(); ?>_images/adv.gif"  />
                             </div>
                         </div>
 

@@ -71,7 +71,7 @@
             <div class="footnote clearfix" >	
 						<div class="container">
 							<div class="grid_12 center" style="float:left">
-									<a href="index.html" ><img style="float:left" src="<?php echo base_url();?>images/logo.png" alt="" class="logo" /></a>
+									<a href="index.html" ><img style="float:left" src="<?php echo base_url();?>_images/logo.png" alt="" class="logo" /></a>
 								<p class="small" style="float:left;margin-left:300px;">
 								designed and developed by <a href="#">Concept company</a>
 								</p>

@@ -1,4 +1,4 @@
-<script type="text/javascript" src="<?php echo base_url(); ?>js/jquery-1.3.2.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>_js/jquery-1.3.2.js"></script>
 <script type="text/javascript">
 
     $(document).ready(function() {
@@ -10,7 +10,7 @@
             $('#loader').show();
             $('#show_heading').show();
                     
-            $.post("<?php echo site_url('js/get_chid_categories.php') ?>", {
+            $.post("<?php echo site_url('_js/get_chid_categories.php') ?>", {
                 parent_id: $('#search_category_id').val()
             }, function(response){			
                 setTimeout("finishAjax('show_sub_categories', '"+escape(response)+"')", 400);

@@ -3,7 +3,7 @@
         <div  class="clearfix">
             <div class="grid_4" style="float:left" >
                 <div class="logo">
-                    <a href="index.html" ><img src="<?php echo base_url(); ?>images/logo.png"  alt="" /></a>
+                    <a href="index.html" ><img src="<?php echo base_url(); ?>_images/logo.png"  alt="" /></a>
                 </div>	
 
             </div>
