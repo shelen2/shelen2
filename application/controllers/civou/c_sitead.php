@@ -22,7 +22,7 @@ class c_sitead extends CI_Controller {
         if ($this->session->userdata('logged_in')) {
             $this->load->view('civou/view_admin');
         } else {
-            $this->load->view('');
+            $this->load->view('civou/view_login');
         }
     }
 

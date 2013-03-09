@@ -1,22 +1,34 @@
+<!DOCTYPE HTML>
 <html>
-    <head >
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title></title>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <title>لوحة الأدمن</title>
+        <?php include 'tempelet/links.php'; ?>
     </head>
     <body>
 
-        <p>   admin  </p>
-        <br/>
-        <a href="<?php echo base_url(); ?>civou/c_category/loadAddCategory"  >اضافه قسم رئيسى </a>
-        <br/>
-        <a href="<?php echo base_url(); ?>civou/c_subcategory/addSubCategory"  >اضافه قسم فرعى </a>
-        <br/>
-        <a href="<?php echo base_url(); ?>civou/c_service/loadAddService"  >اضافه خدمة جديدة  </a>
-        <br/>
-        <a href="<?php echo base_url(); ?>civou/c_b_category/loadaddBCategory"  >أضافة قسم رئيسى جديد للمدونة</a>
-        <br/>
-        <a href="<?php echo base_url(); ?>civou/c_b_subcategory/addbSubCategory"  >أضافة قسم فرعى للمدونة</a>
-        <br/>
+        <div id="wrapper">
+            <!-- start of section top -->
+            <section id="top">
+                <div id="top-wrapp">
+                    <?php include('tempelet/header.php') ?>
+                </div>
+            </section>
+            <?php include 'tempelet/news.php'; ?>
 
+            <div id="content">
+                <div id="left">
+                    <div id="profile_half1">
+                        <h3 style="float:right">Saad</h3>
+                    </div>
+                </div>
+                <div id="right">
+                    <?php include 'tempelet/menu.php'; ?>
+                    <div id="clear"></div>
+                    <?php include 'tempelet/serv_block.php'; ?>
+                </div>
+            </div>
+            <?php include('tempelet/footer.php') ?>
+        </div>
     </body>
 </html>
