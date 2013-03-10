@@ -95,68 +95,7 @@
 
 
                         <!-- Validate script -->
-                        <script type="text/javascript">
-                            function validate_email(field,alerttxt)
-                            {
-                                with (field)
-                                {
-                                    apos=value.indexOf("@");
-                                    dotpos=value.lastIndexOf(".");
-                                    if (apos<1||dotpos-apos<2)
-                                    {jQuery('#contact-error').empty().append(alerttxt);return false;}
-                                    else {return true;}
-                                }
-                            }
-
-                            function check_field(field,alerttxt,checktext){
-                                with (field)
-                                {
-                                    var checkfalse = 0;
-                                    if(field.value == ""){
-                                        jQuery('#contact-error').empty().append(alerttxt);
-                                        field.focus();checkfalse=1;}
-
-                                    if(field.value==checktext)
-                                    {
-                                        jQuery('#contact-error').empty().append(alerttxt);
-                                        field.focus();checkfalse=1;}
-
-                                    if(checkfalse==1){return false;}else{return true;}
-                                }
-                            }
-
-                            function checkForm(thisform)
-                            {
-                                with (thisform)
-                                {
-                                    var error = 0;
-
-                                    var contactmessage = document.getElementById('contactmessage');
-                                    if(check_field(contactmessage,"Please insert your message!","Message")==false){
-                                        error = 1;
-                                    }
-
-                                    var email = document.getElementById('contactemail');
-                                    if (validate_email(email,"Please insert your e-mail!")==false)
-                                    {email.focus();error = 1;}
-
-                                    var contactname = document.getElementById('contactname');
-                                    if(check_field(contactname,"Please insert your name!","Name *")==false){
-                                        error = 1;
-                                    }
-
-
-                                    if(error == 0){
-                                        var contactname = document.getElementById('contactname').value;
-                                        var email = document.getElementById('contactemail').value;
-                                        var contactmessage = document.getElementById('contactmessage').value;
-
-                                        return true;
-                                    }
-                                    return false;
-                                }
-                            }
-                        </script>
+                      
                         <!-- end of script -->
                         
 <div class="form left">

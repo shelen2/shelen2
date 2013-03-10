@@ -4026,3 +4026,51 @@ ul.nav2 .sub_links p a:hover {
 	-moz-border-radius: 3px;
 	border-radius: 3px;
  width:70px;height:24px;border:1px solid #313131 ;background-color:#313131;cursor:pointer;color:#FFF; font-size:1em;font-family:myfont}	
+ #mail_icon{float:right}
+ #sender{float:right;margin-top:8px;padding:0 5px 0 5px;color:#3C6}
+  #sender_name{}
+ #sender a{color:#111;}
+ #sender a:hover{color:#F90;}
+ #message_div{width:95%;height:450px;
+              
+			 color: #d1d1d1;
+	text-align:right;
+    
+    background-color: #fff;
+    border: 1px solid #e7e4d5;
+    
+
+    padding: 15px;
+    -webkit-appearance: none;
+    
+    
+    
+    -webkit-transform: translateZ(0);
+	overflow:scroll;
+	overflow-x: hidden;
+  			}
+			.chat{width:100%; height:auto; margin-bottom:10px;}
+ #sender_message{color:#111;font-family:myfont2;margin-right:45px;margin-top:-20px}			
+ #date{float:left;text-align:left;margin-right:45px;margin-top:-40px;color:#ccc}
+ #blog_box{
+	width:100%;float:right;text-align:right;font-family:myfont2;
+ 	background-color: #fff;
+    border: 1px solid #e7e4d5;
+   
+    min-height: 170px;
+    padding: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-transform: translateZ(0);
+	margin-bottom:20px;
+ }
+ #blog_name a{float:right;text-align:right;font-family:myfont; color: #5d5d5d;
+    font-size: 22px;margin-right:210px;margin-top:-170px;}
+#blog_name a:hover{color: #FF754A; }	
+#blog_desc{text-align:right;margin-right:210px;margin-top:-125px;}

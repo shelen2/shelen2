@@ -106,6 +106,7 @@
 
 
                             <div class="bg-map-contact left">
+
                                 <div class="gallery-single-images left">
                                     <img src="<?php echo base_url(); ?>images/profile/thumb_profile/<?php
                                     if (isset($pic)) {

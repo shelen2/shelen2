@@ -67,6 +67,12 @@ class User extends CI_Controller {
 				$data['zip_code']=$user_data['zip_code'];
 				$data['pic']=$user_data['pic'];
 				}
+				$id=$user_data['id'];
+				 if ($this->session->userdata('user_id')==$id) {
+					 $data['owner']='yes';
+					 }else{
+						 $data['owner']='no';
+						 }
             $this->load->view('user_edit',$data);
             
         }else{
@@ -158,9 +164,15 @@ class User extends CI_Controller {
 				 redirect('site/index');
 				}
 			}				
-						
-	
-	
+		///////////////////////////////////////////////////////////////////  message level1
+		function user_messages(){
+			 $this->load->view('user_messages');
+			}				
+	//////////////////////////////////////////////////////////////////////// message level2
+	function user_chat(){
+		 $this->load->view('user_chat');
+		}
+	////////////////////////////////////////////////////////////////////////
 	
 }
 

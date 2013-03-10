@@ -166,7 +166,14 @@ class Site extends CI_Controller {
             return false;
         }
     }
-
+    //////////////////////////////////////////
+	function blog(){
+		$this->load->view('view_blog');
+		}
+	//////////////////////////////////////////	
+	function blog_details(){
+		$this->load->view('blog_details');
+		}	
     ///////////////////////////////////////
     function logout() {
         $this->session->sess_destroy();
