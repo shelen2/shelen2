@@ -1,188 +1,266 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html dir="ltr" lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
-    <head profile="http://gmpg.org/xfn/11">
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <title>تسويق الكتروني</title>
 
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
-        <meta name="generator" content="WordPress 3.4.2" /> <!-- leave this for stats please -->
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="keywords" content="content">
 
-        <title>
-            السوق
-        </title>
-        <?php include 'tempelet/links.php'; ?>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">		
+
+
+        <link rel="stylesheet" href="<?php echo base_url(); ?>css/stylesheet.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>css/angelina.css" type="text/css" >		
+        <link rel="stylesheet" href="<?php echo base_url(); ?>css/flexslider.css" type="text/css" >		
+        <link rel="stylesheet" href="<?php echo base_url(); ?>css/prettyPhoto.css" type="text/css" >	
+        <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css" type="text/css" media="screen">
+        <!-- template skin -->
+        <link rel="stylesheet" href="<?php echo base_url(); ?>css/skin.css"type="text/css" >	
+
+        <link href="<?php echo base_url(); ?>css/ticker-style.css" rel="stylesheet" type="text/css" />
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+        <script src="<?php echo base_url(); ?>js/jquery.easing.1.3.js" type="text/javascript" ></script>
+
+        <!-- FlexSlider -->	
+        <script src="<?php echo base_url(); ?>js/jquery.flexslider.js" type="text/javascript" ></script> 	
+        <script src="<?php echo base_url(); ?>js/function.js" type="text/javascript" ></script> 
+        <script src="<?php echo base_url(); ?>js/custom.js" type="text/javascript" ></script> 
+        <!-- Ticker -->	
+        <script src="<?php echo base_url(); ?>js/ticker.js" type="text/javascript" ></script> 	
+        <script src="<?php echo base_url(); ?>js/setting.js"  type="text/javascript" ></script> 
+
+        <!-- prettyPhoto -->	
+        <script src="<?php echo base_url(); ?>js/jquery.prettyPhoto.js" type="text/javascript" ></script> 	
+        <script src="<?php echo base_url(); ?>js/setting-1.js"type="text/javascript"  ></script> 
+
+        <!-- ui totop -->	
+        <script src="<?php echo base_url(); ?>js/smoothscroll.js"  type="text/javascript" ></script>
+        <script src="<?php echo base_url(); ?>js/jquery.ui.totop.js"  type="text/javascript"></script>
+
+        <script src="<?php echo base_url(); ?>js/jquery.ticker.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>js/site.js" type="text/javascript"></script>
+<style type="text/css"> 
+.box img{width:250px;height:150px;}
+</style>
+
     </head>
+    <body>
 
-    <body class="page page-id-9 page-template page-template-_contact-php">
+        <!-- start of wrapper -->
+        <div id="wrapper">
 
-
-        <div id="container">
-
-
-
-            <!-- HEADER -->
-            <div class="header left">
-                <div class="head-parallax">
-                    <div id="parallax" class="parallax-viewport">
-                        <ul>
-                            <li class="parallax-layer">
-                                <img src="<?php echo base_url(); ?>images/rays.png" alt="background rays" />
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="bg-header-shadow left">
-                        <div class="wrapper zindex">
-
-                            <!--LOGO-->
-                            <div class="logo left">
-                                <a href="<?php echo base_url(); ?>site/" >
-                                    <img src="<?php echo base_url(); ?>images/logo.png"  alt="logo" />
-                                </a>
-                            </div><!--/logo-->
-
-                            <!--MENU-->
-                            <div class="bg-menu right">
-                                <div class="bg-menu-left left"></div>
-
-                                <?php include('header.php'); ?>
-
-                                <div class="bg-menu-right left"></div>
-                            </div><!--/bg-menu-->
-
-
-                        </div><!--/wrapper-->
-                        <div class="bg-blue-top left"></div><!--/bg-blue-top-->
-
-                    </div><!--/bg-header-shadow-->
-
+            <!-- start of section top -->
+            <section id="top">
+                <div id="top-wrapp">
+                    <?php include('header.php') ?>
                 </div>
-            </div><!--/header-->
+            </section>
+            <!-- end of section top -->
 
-            <!-- BG BLUE -->
-            <div class="blue-page left">
-                <div class="bg-blue-center-title left">
-                    <div class="wrapper">
-                        <div class="title-pages left" style="font-family:myfont">الخدمات</div><!--/wrapper-->
-                        <div class="breadcrumbs-content"><ul><li class="current">الخدمات</li> 
-                                <li><a href="<?php echo base_url(); ?>site/">الرئيسيه</a></li>  <li style="background: none; padding: 0;">: انت في</li></ul>
-                        </div>            </div><!--/wrapper-->
-                </div><!--/bg-blue-center-title-->
-                <div class="bg-blue-down left"></div><!--/bg-blue-down-->
-            </div><!--/blue-page-->
-
-
-
-
-
-
-            <!-- CONTENT -->
-            <div class="content left">
-                <div class="wrapper">
-
-                    <div class="left-page left">
+            <!-- start of section middle -->
+            <div id="news" > 
+                <ul id="js-news" class="js-hidden">
+                    <li class="news-item"><a href="fa.hrml">محمود شعبان يقدم برنامج هاتولى راجل على قناة الحافظ</a></li>
+                    <li class="news-item">jQuery News Ticker now has support for right-to-left languages!</li>
+                    <li class="news-item">jQuery News Ticker now has support for loading content via an RSS feed!</li>
+                    <li class="news-item">jQuery News Ticker now has an optional fade effect between items!</li>
+                    <li class="news-item">New updates have been made to jQuery News Ticker! Check below for more details!</li>
+                    <li class="news-item">jQuery News Ticker is now compatible with jQuery 1.3.2! See below for further details and for latest download.</li>
+                    <li class="news-item">Further updates to jQuery News Ticker are coming soon!</li>
+                </ul>
+            </div>
 
 
 
-
-
-
-                        <div class="contact-text shortcodes left">
-
-
-                        </div><!--/contact-text-->
-
-
-
-
-
-                        <!-- Validate script -->
-                      
-                        <!-- end of script -->
-                        
-<div class="form left">
-    <div class="gallery-home-content left" style="margin-left:-70px;left:0px;width:700px;">
-
-        <?php
+            <div id="content">
+                <div id="left">
+                    <h3 style="float:right;color:#fff;width:800px;text-align:center">تصفح الخدمات التي يقدمها الموقع</h3>                       
+                    <div id="serv_content">
+                        <?php
 //                        $this->load->model('sitead');
-        if ($this->uri->segment(3) != '' && $this->uri->segment(4) != '') {
-            $c_id = $this->uri->segment(3);
-            $sc_id = $this->uri->segment(4);
-            $this->db->from('service');
-            $this->db->where('sc_id', $sc_id);
-            $query = $this->db->get();
-        } else if ($this->uri->segment(3) != '') {
-            $c_id = (int) $this->uri->segment(3);
-            $this->db->from('service');
-            $this->db->where('c_id', $c_id);
-            $query = $this->db->get();
-        } else {
-            $query = $this->db->get('service');
-        }
-        if (isset($query)) {
-            if ($query->num_rows() > 0) {
-                $rows = $query->result();
-                foreach ($rows as $row) {
-                    ?>
-                    <div class="gallery-home-one left">
-                        <div class="gallery-home-images-content left">
-                            <div class="gallery-home-images left"> <img src="<?php echo base_url(); ?>imagesService/thumb/<?php echo $row->photo_name; ?>"  class="attachment-gallery-front wp-post-image" alt="ga5" title="ga5" />  </div>
-                        </div>
-                        <div class="gallery-home-text left"><a href="<?php echo base_url() . "site/market_deatils/" . $row->id; ?>" style="font-family:myfont" ><?php echo $row->detail; ?></a></div>
+                        if ($this->uri->segment(3) != '' && $this->uri->segment(4) != '') {
+                            $c_id = $this->uri->segment(3);
+                            $sc_id = $this->uri->segment(4);
+                            $this->db->from('service');
+                            $this->db->where('sc_id', $sc_id);
+                            $query = $this->db->get();
+                        } else if ($this->uri->segment(3) != '') {
+                            $c_id = (int) $this->uri->segment(3);
+                            $this->db->from('service');
+                            $this->db->where('c_id', $c_id);
+                            $query = $this->db->get();
+                        } else {
+                            $query = $this->db->get('service');
+                        }
+                        if (isset($query)) {
+                            if ($query->num_rows() > 0) {
+                                $rows = $query->result();
+                                foreach ($rows as $row) {
+                                    ?>
+                                    <div class="serv" >
+                                        <div class="box">
+                                            <div class="box-image">
+                                                <a href="<?php echo base_url(); ?>imagesService/<?php echo $row->photo_name; ?>"  data-pretty="prettyPhoto" title="تفاصيل الخدمه" class="thumb"><img src="<?php echo base_url(); ?>imagesService/thumb/<?php echo $row->photo_name; ?>" alt=""  class="scale-grid"/></a>
+                                            </div>
+                                            <div class="box-desc center">
+                                                <h5><a href="<?php echo base_url(); ?>imagesService/<?php echo $row->photo_name; ?>"><?php echo $row->name ?></a></h5>
+
+                                                <p>
+                                                    <?php echo $row->detail; ?>
+                                                </p>
+                                                <a href="<?php echo base_url()."site/market_deatils/".$row->id;?>" id="ask">التفاصيل</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <?php
+                                }
+                            }
+                        }
+                        ?>
+
+                    </div></div>
+
+
+                <div id="right">
+
+                    <div class="main_menu" >
+
+                        <ul class="nav2" style="margin-top:-10px">
+                            <h3 id="dept">الاقسام</h3>
+                            <?php
+                            $query1 = $this->db->get('category');
+                            if ($query1->num_rows() > 0) {
+                                $rows = $query1->result();
+                                foreach ($rows as $row) {
+                                    $base = base_url() . "site/market/";
+//                                    echo $rows->num_rows();
+                                    $this->db->where('c_id', $row->id);
+                                    $query2 = $this->db->get('sub_categ');
+                                    if ($query2->num_rows() > 0) {
+                                        echo "<li><a>$row->name</a></li>";
+                                        ?>
+                                        <div class="sub_links" style="display: none; ">
+
+                                            <?php
+                                            $rowsSub = $query2->result();
+                                            foreach ($rowsSub as $rowSub) {
+                                                echo "<p><a href=\"$base$rowSub->c_id/$rowSub->id\">$rowSub->name</a></p> ";
+                                            }
+                                            ?> 
+                                        </div>
+
+                                        <?php
+                                    } else {
+                                        echo "<li><a href=\"$base$row->id\">$row->name</a></li>";
+                                    }
+                                }
+                            }
+                            ?>
+                        </ul>    
                     </div>
 
-                    <?php
-                }
-            }
-        }
-        ?>
-    </div>
-    <!--/gallery-home-one-->
-
-</div>
-<!--/gallery-home-content--> 
-
-</div>
-
-                    </div><!--/left-page-->
-
-                    <!--SIDEBAR-->
-                    <div class="bg-sidebar right">
-                        <div class="sidebar-top left"></div><!--/sidebar-top-->
-
-
-                        <div id="sidebar" class="right">
-                            <div class="sidebar_widget_holder">
-                                <form method="get"  class="submit-search-form" action="http://demo.themeskingdom.com/dreamy/">
-                                    <div class="search-wrap"><input type="text" name="s" class="search-input" onfocus="if(value==defaultValue)value=''" onblur="if(value=='')value=defaultValue" value=""/></div>
-                                    <div class="searchform-right left"><input type="submit" class="submit-button" value="" /></div>
-                                </form> </div>
-                            <div class="sidebar_widget_holder">
-
-
-                                <?php include 'tempelet/main_menu.php'; ?>
-
-
-                                <div id="clear"></div>
-                                <?php include 'tempelet/most_buy.php'; ?>
-
-                                <div id="clear"></div>
-                                <?php include 'tempelet/most_buy.php'; ?>
-                                <!-- slide wrap -->
+                    <div id="clear"></div>
+                    <div id="serv_block" >
+                        <h3 style="margin-top:-10px;">الخدمات الاكثر ربحا</h3>
+                        <div style="background-color:#5e8d03">
+                            <div id="most">
+                                <img src="<?php echo base_url(); ?>upload/img4.jpg"  width="60" height="50"/>
+                                <h6 id="h6"><a href="#">تصميم مواقع خلال خمس ايام</a></h6>
+                                <p id="p">تصميم مواقع خلال خمس ايام مع تقديم استضافه لمده شهر مجانا </p>
                             </div>
 
-                        </div><!--/#sidebar-->
-                        <div class="sidebar-down left"></div><!--/sidebar-down-->
-                    </div><!--/bg-sidebar-->
+                            <div id="most">
+                                <img src="<?php echo base_url(); ?>upload/img4.jpg"  width="60" height="50"/>
+                                <h6 id="h6"><a href="#">تصميم مواقع خلال خمس ايام</a></h6>
+                                <p id="p">تصميم مواقع خلال خمس ايام مع تقديم استضافه لمده شهر مجانا </p>
+                            </div>
 
-                    <!------------------------------------------------>
+                            <div id="most">
+                                <img src="<?php echo base_url(); ?>upload/img4.jpg"  width="60" height="50"/>
+                                <h6 id="h6"><a href="#">تصميم مواقع خلال خمس ايام</a></h6>
+                                <p id="p">تصميم مواقع خلال خمس ايام مع تقديم استضافه لمده شهر مجانا </p>
+                            </div>
 
-                </div><!--/wrapper-->
-            </div><!--/content-->
-            <?php include('footer.php'); ?>
+                            <div id="most">
+                                <img src="<?php echo base_url(); ?>upload/img4.jpg"  width="60" height="50"/>
+                                <h6 id="h6"><a href="#">تصميم مواقع خلال خمس ايام</a></h6>
+                                <p id="p">تصميم مواقع خلال خمس ايام مع تقديم استضافه لمده شهر مجانا </p>
+                            </div>
+
+                            <div id="most">
+                                <img src="<?php echo base_url(); ?>upload/img4.jpg"  width="60" height="50"/>
+                                <h6 id="h6"><a href="#">تصميم مواقع خلال خمس ايام</a></h6>
+                                <p id="p">تصميم مواقع خلال خمس ايام مع تقديم استضافه لمده شهر مجانا </p>
+                            </div>
+
+                        </div>
+
+                        <div id="clear"></div>
+                        <div id="adv_block" >
+                            <h3 style="margin-top:-10px;">الرعاه</h3>
+
+                            <div id="adv">
+                                <img src="<?php echo base_url(); ?>images/adv.gif"  />
+                                <img src="<?php echo base_url(); ?>images/adv.gif"  />
+                                <img src="<?php echo base_url(); ?>images/adv.gif"  />
+                                <img src="<?php echo base_url(); ?>images/adv.gif"  />
+                                <img src="<?php echo base_url(); ?>images/adv.gif"  />
+                                <img src="<?php echo base_url(); ?>images/adv.gif"  />
+                            </div>
+                        </div>
+
+                        <div id="clear"></div>
+                        <div id="serv_block2" >
+                            <h3 style="margin-top:-10px;">الخدمات التي تم تسليمها</h3>
+
+                            <div id="most">
+                                <img src="<?php echo base_url(); ?>upload/img4.jpg"  width="60" height="50"/>
+                                <h6 id="h6"><a href="#">تصميم مواقع خلال خمس ايام</a></h6>
+                                <p id="p">تصميم مواقع خلال خمس ايام مع تقديم استضافه لمده شهر مجانا </p>
+                            </div>
+
+                            <div id="most">
+                                <img src="<?php echo base_url(); ?>upload/img4.jpg"  width="60" height="50"/>
+                                <h6 id="h6"><a href="#">تصميم مواقع خلال خمس ايام</a></h6>
+                                <p id="p">تصميم مواقع خلال خمس ايام مع تقديم استضافه لمده شهر مجانا </p>
+                            </div>
+
+                            <div id="most">
+                                <img src="<?php echo base_url(); ?>upload/img4.jpg"  width="60" height="50"/>
+                                <h6 id="h6"><a href="#">تصميم مواقع خلال خمس ايام</a></h6>
+                                <p id="p">تصميم مواقع خلال خمس ايام مع تقديم استضافه لمده شهر مجانا </p>
+                            </div>
+
+                            <div id="most">
+                                <img src="<?php echo base_url(); ?>upload/img4.jpg"  width="60" height="50"/>
+                                <h6 id="h6"><a href="#">تصميم مواقع خلال خمس ايام</a></h6>
+                                <p id="p">تصميم مواقع خلال خمس ايام مع تقديم استضافه لمده شهر مجانا </p>
+                            </div>
+
+                            <div id="most">
+                                <img src="<?php echo base_url(); ?>upload/img4.jpg"  width="60" height="50"/>
+                                <h6 id="h6"><a href="#">تصميم مواقع خلال خمس ايام</a></h6>
+                                <p id="p">تصميم مواقع خلال خمس ايام مع تقديم استضافه لمده شهر مجانا </p>
+                            </div>
+
+                        </div>
+                    </div>	
+
+                </div>
+
+            </div>
+
+
+            <!-- end of section middle -->
+
+            <!-- start of section bottom -->
+            <?php include('footer.php') ?>
+            <!-- end of section bottom -->
+
         </div>
-        </div>
-        <!--/container--> 
+        <!-- end of wrapper -->
 
-        <!-- Generated in 0.401 seconds. Made 34 queries to database and 29 cached queries. Memory used - 20.35MB --> 
-        <!-- Cached by DB Cache Reloaded Fix -->
     </body>
 </html>

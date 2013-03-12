@@ -20,7 +20,18 @@ class User extends CI_Controller {
 				$data['city']=$user_data['city'];
 				$data['country']=$user_data['country'];
 				$data['pic']=$user_data['pic'];
+		
+				
+				$id=$user_data['id'];
+				if ($this->session->userdata('user_id')==$id) {
+					 $data['owner']='yes';
+					 }else{
+						 $data['owner']='no';
+						 }
 				}
+				
+				 
+						 
             $this->load->view('user_profile',$data);
             
         }else{
@@ -66,13 +77,15 @@ class User extends CI_Controller {
 				$data['country']=$user_data['country'];
 				$data['zip_code']=$user_data['zip_code'];
 				$data['pic']=$user_data['pic'];
-				}
 				$id=$user_data['id'];
+				}
+				
 				 if ($this->session->userdata('user_id')==$id) {
 					 $data['owner']='yes';
 					 }else{
 						 $data['owner']='no';
 						 }
+						 
             $this->load->view('user_edit',$data);
             
         }else{

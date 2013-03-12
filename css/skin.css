@@ -13,8 +13,8 @@
 a, ul.menu ul li a:hover{
 	color:#587f19;
 }
-#bottom{background:#111}
-#top, .box-image:hover{
+
+#top, #bottom, .box-image:hover{
 	background:#355009 
 }
 
@@ -34,10 +34,8 @@ header {
 	border-bottom:5px solid #5e8d03;
 }
 
-#bottom .footnote{
+footer .footnote{
 	border-top:5px solid #5e8d03;
-	height:50px;
-	padding:5px;
 }
 
 ul.menu {	

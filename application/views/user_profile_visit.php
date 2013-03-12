@@ -141,7 +141,7 @@
                                 ?></p></td>
                                         </tr>
                                         <tr>
-                                            <td>   <a href="#" id="message">شجره الاعضاء</a></td>
+                                            <td>    <a href="#" id="message">شجره الاعضاء</a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -157,6 +157,7 @@
                                                 <?php echo form_close(); ?></td>
                                         </tr>
                                     </table>
+                                    
                                 </div><!--/gallery-single-images-->
 
                             </div><!--/bg-map-contact-->
@@ -346,7 +347,7 @@
                     <div class="bg-sidebar right">
                         <div class="sidebar-top left"></div><!--/sidebar-top-->
 
-
+                 
                         <div id="sidebar" class="right">
                             <div class="sidebar_widget_holder"><form method="get"  class="submit-search-form" action="http://demo.themeskingdom.com/dreamy/">
                                     <div class="search-wrap"><input type="text" name="s" class="search-input" onfocus="if(value==defaultValue)value=''" onblur="if(value=='')value=defaultValue" value=""/></div>
