@@ -51,11 +51,6 @@
             <section id="top">
                 <div id="top-wrapp">
                     <?php include('header.php') ?>
-
-
-
-
-
                 </div>
             </section>
             <!-- end of section top -->
@@ -91,10 +86,79 @@
                                                 <div id="serv_details">
                                                     <p id="serv_name"><?php echo $row->name; ?></p>
                                                     <img id="serv_img" src="<?php echo base_url(); ?>imagesService/<?php echo $row->photo_name; ?>" width="800" height="500"/>
-                                                    <p>m</p>
-                                    
+                                                    <p id="serv_name"><?php echo $row->name;?></p>
+                                                    <table style="margin-left:70px;"  border="0">
+                                                        <tr>
+                                                            <td>محمد جادو</td>
+                                                            <td>: اسم الموظف</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>24 ساعه</td>
+                                                            <td>: وقت التسليم</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>stars</td>
+                                                            <td>: تقيم الموظف</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>stars</td>
+                                                            <td>: تقيم الخدمه</td>
+                                                        </tr>
+
+                                                    </table>
+
+                                                    <table  border="0">
+                                                        <tr>
+                                                            <td><?php echo $row->price_point;?></td>
+                                                            <td>: سعر الخدمه</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12</td>
+                                                            <td>: عدد الطلبات</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>13/3/2013</td>
+                                                            <td>: تاريخ العرض</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>13/3/2013</td>
+                                                            <td>: تاريخ الانتهاء </td>
+                                                        </tr>
+                                                    </table>
+
+                                                    <table width="600" border="0" style="margin-top:3px;">
+                                                        <tr>
+
+                                                            <td><p id="serv_desc">
+                                                                    <?php echo $row->detail;?>
+                                                                </p></td>
+                                                            <td width="60">: التفاصيل</td>
+
+                                                        </tr>
+                                                    </table>
+                                                    </br>
+                                                    </br>
+                                                    </br>
+                                                    </br>
+                                                    </br>
+                                                    </br>
+                                                    </br>
+                                                    </br>
+                                                    </br>
+
+                                                    <a href="<?php echo base_url();?>site/order/<?php echo $row->id ?>" id="ask2">أطلب الخدمه</a>
+                                                    </br>
+                                                    <div id="clear"></div>   
+                                                    <div id="comments"> 
+                                                        <h3>التعليقات</h3>
+                                                        <div id="comment">
+                                                            <a href="#"> <img src="<?php echo base_url(); ?>images/adv.gif" width="70" height="60" /></a>
+                                                            <h6><a href="#"> mohamedtemraz</a></h6>
+                                                            <p class="comment">أوضح لك كيف تكتب عنوانك بشكل صحيح و كيفية شحن السلع المشتراة الى باب منزلك ، سأشرح لك أيضا كيف تحسب الجمارك </p>
+                                                        </div></div>
+
                                                 </div>
-                                    
+
 
                                                 <?php
                                             }

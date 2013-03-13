@@ -2,7 +2,14 @@
 <html>
     <head>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-        <title>تسويق الكتروني</title>
+        <title>
+            <?php
+            if (isset($title)) {
+                echo $title;
+            }
+            ?>
+
+        </title>
 
         <meta name="keywords" content="content">
 
@@ -75,10 +82,18 @@
 
             <div id="content">
                 <div id="left">
-                    <h3 style="float:right;color:#fff;width:800px;text-align:center">تصفح الخدمات التي يقدمها الموقع</h3>                       
+                    <?php
+                    if (isset($mesg)) {
+                        
+                        ?>
+                        <h3 style="float:right;color:#fff;width:800px;text-align:center"><?php echo $mesg;?></h3>
+                        <?php
+                    }
+                    ?>
+
                     <div id="serv_content">
                         <p>
-                            <?php include 'tempelet/order_confirm.php';?>
+
                         </p>
                     </div>
                 </div>

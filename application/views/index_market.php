@@ -40,9 +40,9 @@
 
         <script src="<?php echo base_url(); ?>js/jquery.ticker.js" type="text/javascript"></script>
         <script src="<?php echo base_url(); ?>js/site.js" type="text/javascript"></script>
-<style type="text/css"> 
-.box img{width:250px;height:150px;}
-</style>
+        <style type="text/css"> 
+            .box img{width:250px;height:150px;}
+        </style>
 
     </head>
     <body>
@@ -79,19 +79,25 @@
                     <div id="serv_content">
                         <?php
 //                        $this->load->model('sitead');
+//                        $this->db->select('id, name, price_point, left( detail, 100 ) , photo_name, c_id, sc_id');
                         if ($this->uri->segment(3) != '' && $this->uri->segment(4) != '') {
                             $c_id = $this->uri->segment(3);
                             $sc_id = $this->uri->segment(4);
-                            $this->db->from('service');
-                            $this->db->where('sc_id', $sc_id);
-                            $query = $this->db->get();
+//                            $this->db->from('service');
+//                            $this->db->where('sc_id', $sc_id);
+                            $sql = 'SELECT id, name, price_point, left( detail, 100 )  AS detail, photo_name, c_id, sc_id FROM service where sc_id=' . $sc_id;
+//                            $sql+=' where sc_id=' . $sc_id;
+                            $query = $this->db->query($sql);
                         } else if ($this->uri->segment(3) != '') {
                             $c_id = (int) $this->uri->segment(3);
-                            $this->db->from('service');
-                            $this->db->where('c_id', $c_id);
-                            $query = $this->db->get();
+//                            $this->db->from('service');
+//                            $this->db->where('c_id', $c_id);
+                            $sql = 'SELECT id, name, price_point, left( detail, 100 )  AS detail, photo_name, c_id, sc_id FROM service where c_id=' . $c_id;
+
+                            $query = $this->db->query($sql);
                         } else {
-                            $query = $this->db->get('service');
+                            $sql = 'SELECT id, name, price_point, left( detail, 100 )  AS detail, photo_name, c_id, sc_id FROM service';
+                            $query = $this->db->query($sql);
                         }
                         if (isset($query)) {
                             if ($query->num_rows() > 0) {
@@ -109,13 +115,17 @@
                                                 <p>
                                                     <?php echo $row->detail; ?>
                                                 </p>
-                                                <a href="<?php echo base_url()."site/market_deatils/".$row->id;?>" id="ask">التفاصيل</a>
+                                                <a href="<?php echo base_url() . "site/market_deatils/" . $row->id; ?>" id="ask">التفاصيل</a>
                                             </div>
                                         </div>
                                     </div>
 
                                     <?php
                                 }
+                            } else {
+                                ?>
+                                <h3 style="float:right;color:#fff;width:800px;text-align:center">لا توجد نتائج بحث يرجى أعاده المحاولة</h3> 
+                                <?php
                             }
                         }
                         ?>
